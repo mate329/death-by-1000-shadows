@@ -1,0 +1,928 @@
+{
+  "scenarios": [
+    {
+      "name": "device-shadow",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "reported": {
+              "aqiScale": "usEpa",
+              "autoevacFreq": 1,
+              "audio": {
+                "active": true,
+                "volume": 50,
+                "videoPing": 0
+              },
+              "binPause": false,
+              "binTypeDetect": 1,
+              "bleDevLoc": false,
+              "carpetBoost": true,
+              "childLock": false,
+              "chrgLrPtrn": 1,
+              "cleaningStrat": 1,
+              "cloudEnv": "prod",
+              "detergent": 1,
+              "dryDMode": 1,
+              "country": "US",
+              "cutHeight": {
+                "currentMM": 1,
+                "desiredMM": 1,
+                "maxMM": 1,
+                "minMM": 1
+              },
+              "demoMode": 1,
+              "dnd": {
+                "endsAt": 0,
+                "dailyStart": 22,
+                "dailyEnd": 7
+              },
+              "dvcMode": 1,
+              "dispLight": 1,
+              "dryDMmode": 1,
+              "ecoCharge": false,
+              "evacAllowed": false,
+              "fanSpeed": 1,
+              "filterStatus": {
+                "filter_pack_id": {
+                  "pctLeft": 64,
+                  "lastRstTm": 1714521600
+                }
+              },
+              "frAllowed": 1,
+              "gentleMode": 1,
+              "imgUpload": 1,
+              "langs": [
+                {
+                  "en-US": 0
+                },
+                {
+                  "en-GB": 1
+                },
+                {
+                  "de-DE": 2
+                },
+                {
+                  "fr-FR": 3
+                },
+                {
+                  "es-ES": 4
+                }
+              ],
+              "langs2": {
+                "sVer": "1.0",
+                "aSlots": 2,
+                "dLangs": {
+                  "ver": "1.0",
+                  "langs": [
+                    "en-US",
+                    "de-DE"
+                  ]
+                },
+                "uLangs": {
+                  "ver": "1.1",
+                  "packId": "lang-pack-1",
+                  "langs": [
+                    "fr-FR",
+                    "es-ES"
+                  ]
+                },
+                "sLang": "en-US"
+              },
+              "language": 1,
+              "mapUploadAllowed": false,
+              "name": "Kitchen",
+              "noAutoPasses": false,
+              "noPP": false,
+              "odoaFeats": {
+                "stdDock": 1,
+                "evacDock": 1,
+                "cables": 1,
+                "pWaste": 1,
+                "shoes": 1,
+                "socks": 1
+              },
+              "odoaMode": 1,
+              "peopleFilter": 1,
+              "openOnly": false,
+              "pwAreaInterval": 1,
+              "padDirtyPause": 1,
+              "padDryAllowed": 1,
+              "padDryDur": 1,
+              "padWashAllowed": 1,
+              "padWetness": {
+                "disposable": 1,
+                "reusable": 1,
+                "padPlate": 1
+              },
+              "pmapCL": false,
+              "pmapLearningAllowed": false,
+              "precheck": {
+                "readiness": 1,
+                "readinessTm": 1,
+                "weather": 1
+              },
+              "pwHeat": 1,
+              "pwReturn": 1,
+              "pwTimeInterval": 1,
+              "rankOverlap": 1,
+              "sanitizationMode": 1,
+              "schedHold": false,
+              "sprayMode": 1,
+              "suctionLevel": 1,
+              "swScrub": 1,
+              "tileScan": false,
+              "timezone": "America/New_York",
+              "twoPass": false,
+              "vacHigh": false,
+              "wDevLoc": false
+            }
+          },
+          "write": {
+            "reported": {
+              "childLock": true,
+              "carpetBoost": false,
+              "twoPass": true,
+              "audio": {"volume": 40},
+              "dnd": {"dailyStart": 21, "dailyEnd": 8}
+            }
+          }
+        },
+        "ro-currentstate": {
+          "state": {
+            "reported": {
+              "accountControl": false,
+              "alexaControl": false,
+              "batPct": 86,
+              "bin": {
+                "full": false,
+                "present": true,
+                "type": "std"
+              },
+              "cleanMissionStatus": {
+                "area": 42,
+                "cycle": "clean",
+                "condNotReady": [
+                  0
+                ],
+                "error": 0,
+                "expireM": 0,
+                "expireTm": 0,
+                "initiator": "schedule",
+                "mssnM": 18,
+                "mssnStrtTm": 1714608000,
+                "nMssn": 214,
+                "notReady": 0,
+                "phase": "charge",
+                "pmap": "pmapA",
+                "rechrgM": 4,
+                "rechrgTm": 1714609000,
+                "sqft": 320,
+                "operatingMode": 2,
+                "missionId": "mssn-214"
+              },
+              "detectedPad": "ok",
+              "dock": {
+                "fwVer": "1.2.3",
+                "id": "dock-1",
+                "known": true,
+                "pn": "4762590",
+                "state": 1,
+                "hwRev": 4,
+                "varID": 2,
+                "frState": 0,
+                "cap": {
+                  "detergent": 0,
+                  "evac": 1,
+                  "fr": 1,
+                  "pw": 1,
+                  "pwo": 0,
+                  "pd": 1
+                },
+                "tankLvl": 80,
+                "error": 0,
+                "fwVerSec": "1.2.3",
+                "pwState": 0,
+                "gwTankLvl": 0,
+                "pdState": 0,
+                "pdEndTm": 0,
+                "detTankEmpty": 0
+              },
+              "googleControl": false,
+              "hwDbgr": {
+                "hw": "ok",
+                "swVer": "1.2.3",
+                "status": 1,
+                "id": "ok"
+              },
+              "iftttControl": false,
+              "keyState": "ok",
+              "lastBinFull": 1,
+              "lastCE": 1,
+              "lastDisconnect": 1,
+              "lastTankEmpty": 1,
+              "lidOpen": false,
+              "pmaps": [
+                {
+                  "pmapA": "180109T161422"
+                },
+                {
+                  "pmapB": "180106T180310"
+                },
+                {
+                  "pmapC": "180106T015241"
+                }
+              ],
+              "pmapShare": {
+                "native": [
+                  1
+                ],
+                "copy": [
+                  1
+                ],
+                "share": [
+                  1
+                ]
+              },
+              "p2maps": [
+                "item"
+              ],
+              "regDate": "2024-05-01",
+              "runtimeStats": {
+                "hr": 186,
+                "min": 24,
+                "sqft": 48210
+              },
+              "siriControl": false,
+              "streamingVideoStatus": {
+                "channel": "ok",
+                "code": 1
+              },
+              "tankLvl": 72,
+              "tankPresent": false,
+              "teaming": {
+                "nMssn": 12,
+                "state": "Idle",
+                "teamId": "team-1",
+                "teamingType": "onetime",
+                "ts": 1714600000
+              },
+              "tz": {
+                "events": [
+                  {
+                    "dt": 1,
+                    "off": 1
+                  }
+                ],
+                "ver": 1
+              }
+            }
+          },
+          "write": {
+            "reported": {
+              "batPct": 85
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "desired": {
+              "deploymentId": "id-1",
+              "imuRecal": 1,
+              "tankLvlRecal": 1
+            },
+            "reported": {
+              "aiModelVer": 1,
+              "deploymentId": "id-1",
+              "deploymentMpkg": "lewis+3.14.12+build",
+              "deploymentState": 1,
+              "imuRecal": 1,
+              "lastCommand": {
+                "command": "ok",
+                "initiator": "ok",
+                "ordered": 1,
+                "pmap_id": "ok",
+                "time": 1,
+                "user_pmapv_id": "ok"
+              },
+              "lastSwUpdate": "2024-04-12",
+              "otaDownloadProgress": 1,
+              "parcelDeploymentId": {
+                "ml": "ok"
+              },
+              "parcelDeploymentState": {
+                "ml": 1
+              },
+              "requestedSoftwareTimestamp": 1,
+              "requestedSoftwareVersion": "1.2.3",
+              "softwareVer": "lewis+3.14.12+build",
+              "specialOTA": 1,
+              "subModSwVer": {
+                "aoa": "0.0.1",
+                "bmp": "1.0.0",
+                "con": "1.1.11",
+                "linux": "linux+1.1.3",
+                "mob": "0.10.6",
+                "mobBtl": "4.0.0",
+                "nav": "lewis-nav+1.2.7",
+                "pwr": "0.4.4",
+                "sft": "0.0.46",
+                "eco": "0.1.3",
+                "cam": "0.2.1",
+                "parcels": {
+                  "machine-learning-parcel": "1.2.3"
+                },
+                "mcu": "4.0.0"
+              },
+              "tankLvlRecal": 1
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVer": "lewis+3.14.13+build"
+            }
+          }
+        },
+        "rw-schedule": {
+          "state": {
+            "reported": {
+              "cleanSchedule": {
+                "cycle": [
+                  "none",
+                  "start",
+                  "none",
+                  "start",
+                  "none",
+                  "none",
+                  "none"
+                ],
+                "h": [
+                  0,
+                  9,
+                  0,
+                  18,
+                  0,
+                  0,
+                  0
+                ],
+                "m": [
+                  0,
+                  30,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "cleanSchedule2": [
+                {
+                  "type": 0,
+                  "enabled": true,
+                  "start": {
+                    "day": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "hour": 9,
+                    "min": 0
+                  },
+                  "cmd": {
+                    "command": "start",
+                    "pmap_id": "pmapA",
+                    "ordered": 0,
+                    "regions": [
+                      {
+                        "region_id": "kitchen"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": 0,
+                  "enabled": true,
+                  "start": {
+                    "day": [
+                      0,
+                      6
+                    ],
+                    "hour": 11,
+                    "min": 0
+                  },
+                  "cmd": {
+                    "command": "start"
+                  }
+                }
+              ],
+              "cleanSchedule2s": {
+                "oneTmDay": 1,
+                "ena": [
+                  1
+                ],
+                "nPass": [
+                  1
+                ],
+                "h": [
+                  1
+                ],
+                "m": [
+                  1
+                ]
+              }
+            }
+          },
+          "write": {
+            "reported": {
+              "cleanSchedule": {
+                "cycle": [
+                  "none",
+                  "start",
+                  "none",
+                  "start",
+                  "none",
+                  "none",
+                  "none"
+                ],
+                "h": [
+                  0,
+                  8,
+                  0,
+                  18,
+                  0,
+                  0,
+                  0
+                ],
+                "m": [
+                  0,
+                  30,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "ro-stats": {
+          "state": {
+            "reported": {
+              "bbchg": {
+                "aborts": [
+                  1
+                ],
+                "nChatters": 1,
+                "nChgOk": 1,
+                "nKnockoffs": 1,
+                "nLithF": 1,
+                "smberr": 1,
+                "chgErr": [
+                  1
+                ],
+                "nChgErr": 1
+              },
+              "bbchg3": {
+                "avgMin": 1,
+                "estCap": 1,
+                "hOnDock": 1,
+                "nAvail": 1,
+                "nDocks": 1,
+                "nLithChrg": 1,
+                "nNimhChrg": 1
+              },
+              "bbmssn": {
+                "aCycleM": 1,
+                "aMssnM": 1,
+                "nMssn": 1,
+                "nMssnC": 1,
+                "nMssnF": 1,
+                "nMssnOk": 1
+              },
+              "bbnav": {
+                "aExpo": 1,
+                "aGain": 1,
+                "aMtrack": 1,
+                "nGoodLmrks": 1
+              },
+              "bbpanic": {
+                "panics": [
+                  1
+                ]
+              },
+              "bbpause": {
+                "pauses": [
+                  1
+                ]
+              },
+              "bbrstinfo": {
+                "causes": "ok",
+                "nMobRst": 1,
+                "nNavRst": 1,
+                "nOomRst": 1,
+                "nSafRst": 1,
+                "safCauses": [
+                  1
+                ],
+                "nMapLoadRst": 1
+              },
+              "bbrun": {
+                "hr": 186,
+                "min": 24,
+                "nCBump": 1204,
+                "nCliffsF": 88,
+                "nCliffsR": 41,
+                "nDStll": 3,
+                "nEvacs": 640,
+                "nLBStll": 2,
+                "nMBStll": 1,
+                "nOpticalDD": 0,
+                "nOvertemps": 0,
+                "nPanics": 7,
+                "nPicks": 54,
+                "nPiezoDD": 0,
+                "nRBStll": 2,
+                "nScrubs": 900,
+                "nSlips": 33,
+                "nStuck": 6,
+                "nWStll": 4,
+                "sqft": 48210
+              },
+              "bbswitch": {
+                "nBumper": 1,
+                "nClean": 1,
+                "nDock": 1,
+                "nDrops": 1,
+                "nKey": 1,
+                "nLid": 1,
+                "nLifts": 1,
+                "nSpot": 1
+              },
+              "bbsys": {
+                "hr": 1,
+                "min": 1
+              },
+              "mssnNavStats": {
+                "gLmk": 1,
+                "h_drift": 1,
+                "h_squal": 1,
+                "kdp": 1,
+                "l_drift": 1,
+                "l_squal": 1,
+                "lmk": 1,
+                "missionId": "id-1",
+                "mpSt": "ok",
+                "mTrk": 1,
+                "nmc": 1,
+                "nmmc": 1,
+                "nMssn": 1,
+                "nrmc": 1,
+                "plnErr": "ok",
+                "reLc": 1,
+                "sfkdp": 1
+              }
+            }
+          },
+          "write": {
+            "reported": {
+              "bbrun": {
+                "hr": 187
+              }
+            }
+          }
+        },
+        "ro-configinfo": {
+          "state": {
+            "reported": {
+              "batInfo": {
+                "afCount": 1,
+                "cCount": 1,
+                "mData": "ok",
+                "mDate": "ok",
+                "mDaySerial": 1,
+                "mLife": "ok",
+                "mName": "ok"
+              },
+              "batteryType": "lithium",
+              "bootloaderVer": "4.0.0",
+              "hardwareRev": 1,
+              "hwPartsRev": {
+                "aoaSerialNo": "AOA1",
+                "csscID": 1,
+                "mobBrd": 4,
+                "navSerialNo": "NAV1",
+                "wlan0HwAddr": "001122334455",
+                "NavBrd": 2,
+                "mobBlid": "BLID",
+                "imuPartNo": "IMU1",
+                "lrDrv": "DRV",
+                "fan": "FAN",
+                "ui": "UI"
+              },
+              "mobilityVer": "0.10.6",
+              "navSwVer": "lewis-nav+1.2.7",
+              "passwordHash": "redacted",
+              "sku": "j755020",
+              "soundVer": "0.0.46",
+              "svcEndpoints": {
+                "svcDeplId": "prod-us"
+              },
+              "uiSwVer": "1.8.2",
+              "umiVer": "1.2.3",
+              "wifiSwVer": "0.4.4",
+              "soldAsSku": "j755020"
+            }
+          },
+          "write": {
+            "reported": {
+              "batteryType": "lithium"
+            }
+          }
+        },
+        "na-device-flags": {
+          "state": {
+            "reported": {
+              "batAuthEnable": false,
+              "behaviorFwk": false,
+              "featureFlags": {
+                "astMotorStoppedStateEnabled": false,
+                "binLPFreset": false,
+                "childLockEnable": 1,
+                "chrgLrPtrnEnable": 1,
+                "clearHaz": false,
+                "clearRideups": 1,
+                "coveragePlannerVersion": 1,
+                "covHybridPlan": 1,
+                "covPlan": 1,
+                "debrisFieldMapping": 1,
+                "debrisHuntStrategy": false,
+                "gentle": 1,
+                "hibLed": 1,
+                "homeMonitoring": false,
+                "ignoreLostPadIfDeployed": 1,
+                "mapCleanup": false,
+                "mapSharing": 1,
+                "mbsPMapsBeta": 1,
+                "nearDockingMCB": 1,
+                "padWetoutEnable": 1,
+                "pixelMapping": 1,
+                "quietNav": false,
+                "reachableSpaceFlags": 1,
+                "ros2SptLvl": false,
+                "rugTraversal": 1,
+                "segmentEventPlanner": false,
+                "stratParams": 1,
+                "swScrubEnable": 1,
+                "trainingStrategy": 1,
+                "umcsDryOnly": 1,
+                "visualDirt": 1,
+                "visualStasisDetection": false,
+                "wallE": 1
+              },
+              "gpsRef": "ok",
+              "matter": {
+                "macAddress": "ok",
+                "nodeLabel": "ok",
+                "productId": 1,
+                "uniqueId": "id-1",
+                "vendorId": 1
+              },
+              "missionTelemetry": {
+                "map_load": 1,
+                "map_hypothesis": 1,
+                "vslam_report": 1,
+                "bat_stats": 1
+              },
+              "mtEventFilters": {
+                "live": [
+                  "item"
+                ],
+                "history": [
+                  "item"
+                ]
+              },
+              "pmapSGen": 1,
+              "r2a": {
+                "binStatus": false,
+                "connStats": false,
+                "docking": false,
+                "homing": false,
+                "monits": false,
+                "odncReport": false,
+                "params": {
+                  "rlSensors": {
+                    "expId": "id-1",
+                    "reflexTrigger": [
+                      "item"
+                    ]
+                  },
+                  "odncReport": {
+                    "sendHealthy": false
+                  }
+                },
+                "rlSensors": false,
+                "undocking": false
+              },
+              "reflexSettings": {
+                "rlWheelDrop": {
+                  "enabled": 1
+                },
+                "rlThresholdTraversal": {
+                  "enabled": 1
+                }
+              },
+              "robotLogUpload": {
+                "cleantrack": 1,
+                "miscLog": 1,
+                "mobility": 1,
+                "wifi": 1
+              },
+              "sceneRecog": 1,
+              "secureBoot": {
+                "blType": 1,
+                "efuse": 1,
+                "enforce": 1,
+                "flip": 1,
+                "idSwitch": 1,
+                "lastRst": "ok",
+                "log": 1,
+                "permReq": 1,
+                "perm": "ok",
+                "recov": "ok",
+                "sbl1Ver": "1.2.3",
+                "stublVer": "1.2.3",
+                "TSK": "ok"
+              },
+              "tls": {
+                "lcCiphers": [
+                  1
+                ],
+                "privKType": 1,
+                "tzbChk": 1
+              },
+              "wifiAnt": 1
+            }
+          },
+          "write": {
+            "reported": {
+              "batAuthEnable": true
+            }
+          }
+        },
+        "ro-services": {
+          "state": {
+            "reported": {
+              "optFeats": {
+                "pmaps": {
+                  "enabled": true,
+                  "exp": 0
+                },
+                "raas": {
+                  "enabled": false,
+                  "exp": 0
+                },
+                "team": {
+                  "enabled": true,
+                  "exp": 0
+                },
+                "odoaLite": {
+                  "enabled": true,
+                  "exp": 0
+                },
+                "demoButton": 0,
+                "suctionLevels": 1,
+                "skipRoom": 1,
+                "swScrub": 1,
+                "carpetBoost": 1
+              },
+              "smartHome": {
+                "homeMonitoringAllowed": false,
+                "homeMonitoringType": 0
+              }
+            }
+          },
+          "write": {
+            "reported": {
+              "smartHome": {
+                "homeMonitoringAllowed": true
+              }
+            }
+          }
+        },
+        "rw-constatus": {
+          "state": {
+            "reported": {
+              "connected": true,
+              "connectedv2": 1,
+              "echo": false
+            }
+          },
+          "write": {
+            "reported": {
+              "connected": false
+            }
+          }
+        },
+        "ro-sensor": {
+          "state": {
+            "reported": {
+              "aqi": 22,
+              "pm25": 8
+            }
+          },
+          "write": {
+            "reported": {
+              "aqi": 18
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": ["rw-settings"],
+          "count": 12
+        },
+        {
+          "kind": "write",
+          "groups": ["rw-settings", "rw-schedule"],
+          "count": 10
+        },
+        {
+          "kind": "write",
+          "groups": ["rw-settings", "na-device-flags"],
+          "count": 8
+        },
+        {
+          "kind": "write",
+          "groups": ["ro-currentstate", "ro-stats", "ro-sensor"],
+          "count": 6
+        },
+        {
+          "kind": "write",
+          "groups": ["rw-software", "ro-configinfo"],
+          "count": 4
+        },
+        {
+          "kind": "write",
+          "groups": ["rw-constatus", "ro-currentstate"],
+          "count": 4
+        },
+        {
+          "kind": "write",
+          "groups": ["rw-settings", "rw-schedule", "ro-currentstate"],
+          "count": 4
+        },
+        {
+          "kind": "read",
+          "groups": ["rw-settings", "ro-currentstate", "ro-sensor"],
+          "count": 14
+        },
+        {
+          "kind": "read",
+          "groups": ["ro-currentstate", "ro-stats"],
+          "count": 10
+        },
+        {
+          "kind": "read",
+          "groups": ["rw-schedule", "rw-settings", "ro-currentstate"],
+          "count": 8
+        },
+        {
+          "kind": "read",
+          "groups": ["rw-software", "ro-configinfo", "na-device-flags"],
+          "count": 6
+        },
+        {
+          "kind": "read",
+          "groups": ["ro-services", "rw-settings", "na-device-flags"],
+          "count": 5
+        },
+        {
+          "kind": "read",
+          "groups": ["rw-constatus", "ro-currentstate", "ro-sensor"],
+          "count": 5
+        },
+        {
+          "kind": "read",
+          "groups": [
+            "rw-settings",
+            "ro-currentstate",
+            "rw-software",
+            "rw-schedule",
+            "ro-stats",
+            "ro-configinfo",
+            "na-device-flags",
+            "ro-services",
+            "rw-constatus",
+            "ro-sensor"
+          ],
+          "count": 4
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    }
+  ]
+}

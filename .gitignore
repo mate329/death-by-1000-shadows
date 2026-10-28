@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+cdk.out/
+.jsii-cache/
+cdk.context.json
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+experiment-2-results.json
+local-results/

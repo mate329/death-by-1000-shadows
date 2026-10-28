@@ -1,0 +1,1263 @@
+{
+  "experiment": 2,
+  "mode": "live",
+  "region": "us-east-1",
+  "created_at_utc": "2026-09-30T21:03:57.198418+00:00",
+  "run_id": "50177fa1c7b8",
+  "configuration": [
+    {
+      "name": "small-shadow",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": [
+            "rw-settings"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "hot-settings",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": [
+            "rw-settings"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "targeted-reads",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "read",
+          "groups": [
+            "rw-settings"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "whole-state-reads",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "read",
+          "groups": [
+            "rw-settings",
+            "rw-software"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "cross-domain-writes",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": [
+            "rw-settings",
+            "rw-software"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "lookup-overhead",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": [
+            "rw-settings"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "lookup",
+      "dual_write_actions": 0,
+      "logical_actions_per_device_per_day": 1000
+    },
+    {
+      "name": "migration-overlap",
+      "groups": {
+        "rw-settings": {
+          "state": {
+            "desired": {
+              "childLock": false,
+              "settingsPadding": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            }
+          },
+          "write": {
+            "desired": {
+              "childLock": true
+            }
+          }
+        },
+        "rw-software": {
+          "state": {
+            "reported": {
+              "softwareVersion": "1.0",
+              "softwarePadding": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+            }
+          },
+          "write": {
+            "reported": {
+              "softwareVersion": "1.1"
+            }
+          }
+        }
+      },
+      "workload": [
+        {
+          "kind": "write",
+          "groups": [
+            "rw-settings"
+          ],
+          "count": 20
+        }
+      ],
+      "routing": "known",
+      "dual_write_actions": 100,
+      "logical_actions_per_device_per_day": 1000
+    }
+  ],
+  "repeats": 3,
+  "shadow_rate_per_million_usd": null,
+  "scope": "Shadow operation unit proxies, not billing exports. Units use complete desired/reported records, rounded to 1024 bytes. Missing migration GETs use one minimum unit. SDK retries are reported but not included in unit estimates. Setup, verification, transition_reset and cleanup are benchmark overhead. Migration and extra transition work enter break-even. Excludes MQTT, rules, compute, logging, engineering cost, and cross-shadow atomicity. Offline payload bytes are simulated; latency is null. Live bytes are SDK JSON payloads, excluding HTTP/TLS overhead. Latency sums sequential SDK-call durations per logical action, excluding pacing and verification.",
+  "scenarios": [
+    {
+      "name": "small-shadow",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "classic",
+        "named"
+      ],
+      "record_bytes": {
+        "classic_before": 345,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 162,
+        "rw-software": 169
+      },
+      "classic": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 60,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 9026.29796002293,
+        "logical_actions": 60,
+        "estimated_units_per_action": 1.0,
+        "action_api_ms_p50": 148.1553124904167,
+        "action_api_ms_p95": 187.49133398523554
+      },
+      "named": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 60,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8480.447378242388,
+        "logical_actions": 60,
+        "estimated_units_per_action": 1.0,
+        "action_api_ms_p50": 132.46510399039835,
+        "action_api_ms_p95": 174.90962496958673
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 2,
+          "request_payload_bytes": 690,
+          "response_payload_bytes": 1310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 810.5011250008829
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 9,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 4310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1310.9844570280984
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 13,
+          "request_payload_bytes": 536,
+          "response_payload_bytes": 5149,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 2081.3992090406828
+        },
+        "workload_classic": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 60,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 9026.29796002293
+        },
+        "workload_named": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 60,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8480.447378242388
+        }
+      },
+      "economics": {
+        "conclusion": "equal_estimated_units",
+        "estimated_units_saved_per_action": 0.0,
+        "saving_percent": 0.0,
+        "migration_units_per_device_estimated": 13,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": null,
+        "break_even_days": null,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": 0.0
+      }
+    },
+    {
+      "name": "hot-settings",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "named",
+        "classic"
+      ],
+      "record_bytes": {
+        "classic_before": 5945,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 1362,
+        "rw-software": 4569
+      },
+      "classic": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 360,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8241.091210860759,
+        "logical_actions": 60,
+        "estimated_units_per_action": 6.0,
+        "action_api_ms_p50": 133.7449999700766,
+        "action_api_ms_p95": 155.1236670347862
+      },
+      "named": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 120,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8396.965997118969,
+        "logical_actions": 60,
+        "estimated_units_per_action": 2.0,
+        "action_api_ms_p50": 134.82041651150212,
+        "action_api_ms_p95": 167.37958299927413
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 12,
+          "request_payload_bytes": 11890,
+          "response_payload_bytes": 12510,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 373.9693740499206
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 34,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 38310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1202.792541065719
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 48,
+          "request_payload_bytes": 6136,
+          "response_payload_bytes": 44749,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1759.0814969153143
+        },
+        "workload_named": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 120,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8396.965997118969
+        },
+        "workload_classic": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 360,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8241.091210860759
+        }
+      },
+      "economics": {
+        "conclusion": "lower_estimated_units",
+        "estimated_units_saved_per_action": 4.0,
+        "saving_percent": 66.66666666666667,
+        "migration_units_per_device_estimated": 48,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": 12,
+        "break_even_days": 0.012,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": 120000.0
+      }
+    },
+    {
+      "name": "targeted-reads",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "classic",
+        "named"
+      ],
+      "record_bytes": {
+        "classic_before": 5945,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 1362,
+        "rw-software": 4569
+      },
+      "classic": {
+        "gets": 60,
+        "updates": 0,
+        "estimated_units": 360,
+        "request_payload_bytes": 0,
+        "response_payload_bytes": 456240,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8275.980253121816,
+        "logical_actions": 60,
+        "estimated_units_per_action": 6.0,
+        "action_api_ms_p50": 131.2795000267215,
+        "action_api_ms_p95": 181.7722920095548
+      },
+      "named": {
+        "gets": 60,
+        "updates": 0,
+        "estimated_units": 120,
+        "request_payload_bytes": 0,
+        "response_payload_bytes": 171060,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8658.229249936994,
+        "logical_actions": 60,
+        "estimated_units_per_action": 2.0,
+        "action_api_ms_p50": 135.98233353695832,
+        "action_api_ms_p95": 179.46108296746388
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 12,
+          "request_payload_bytes": 11890,
+          "response_payload_bytes": 12510,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 379.29399899439886
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 34,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 38308,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1214.9044999969192
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 48,
+          "request_payload_bytes": 6136,
+          "response_payload_bytes": 44749,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1775.6122500286438
+        },
+        "workload_classic": {
+          "gets": 60,
+          "updates": 0,
+          "estimated_units": 360,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 456240,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8275.980253121816
+        },
+        "workload_named": {
+          "gets": 60,
+          "updates": 0,
+          "estimated_units": 120,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 171060,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8658.229249936994
+        }
+      },
+      "economics": {
+        "conclusion": "lower_estimated_units",
+        "estimated_units_saved_per_action": 4.0,
+        "saving_percent": 66.66666666666667,
+        "migration_units_per_device_estimated": 48,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": 12,
+        "break_even_days": 0.012,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": 120000.0
+      }
+    },
+    {
+      "name": "whole-state-reads",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "named",
+        "classic"
+      ],
+      "record_bytes": {
+        "classic_before": 5945,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 1362,
+        "rw-software": 4569
+      },
+      "classic": {
+        "gets": 60,
+        "updates": 0,
+        "estimated_units": 360,
+        "request_payload_bytes": 0,
+        "response_payload_bytes": 456240,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8008.688080357388,
+        "logical_actions": 60,
+        "estimated_units_per_action": 6.0,
+        "action_api_ms_p50": 126.34789600269869,
+        "action_api_ms_p95": 153.16320903366432
+      },
+      "named": {
+        "gets": 120,
+        "updates": 0,
+        "estimated_units": 420,
+        "request_payload_bytes": 0,
+        "response_payload_bytes": 454020,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 15581.98871172499,
+        "logical_actions": 60,
+        "estimated_units_per_action": 7.0,
+        "action_api_ms_p50": 252.73266600561328,
+        "action_api_ms_p95": 290.7183330389671
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 12,
+          "request_payload_bytes": 11890,
+          "response_payload_bytes": 12510,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 353.8440419943072
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 34,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 38308,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1228.019791888073
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 48,
+          "request_payload_bytes": 6136,
+          "response_payload_bytes": 44749,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1663.8868740410544
+        },
+        "workload_named": {
+          "gets": 120,
+          "updates": 0,
+          "estimated_units": 420,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 454020,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 15581.98871172499
+        },
+        "workload_classic": {
+          "gets": 60,
+          "updates": 0,
+          "estimated_units": 360,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 456240,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8008.688080357388
+        }
+      },
+      "economics": {
+        "conclusion": "higher_estimated_units",
+        "estimated_units_saved_per_action": -1.0,
+        "saving_percent": -16.666666666666668,
+        "migration_units_per_device_estimated": 48,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": null,
+        "break_even_days": null,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": -30000.0
+      }
+    },
+    {
+      "name": "cross-domain-writes",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "classic",
+        "named"
+      ],
+      "record_bytes": {
+        "classic_before": 345,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 162,
+        "rw-software": 169
+      },
+      "classic": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 60,
+        "request_payload_bytes": 4650,
+        "response_payload_bytes": 13882,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8254.96770767495,
+        "logical_actions": 60,
+        "estimated_units_per_action": 1.0,
+        "action_api_ms_p50": 134.15062500280328,
+        "action_api_ms_p95": 160.16379196662456
+      },
+      "named": {
+        "gets": 0,
+        "updates": 120,
+        "estimated_units": 120,
+        "request_payload_bytes": 5310,
+        "response_payload_bytes": 17474,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 16487.93770663906,
+        "logical_actions": 60,
+        "estimated_units_per_action": 2.0,
+        "action_api_ms_p50": 273.4373960120138,
+        "action_api_ms_p95": 305.5681260302663
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 2,
+          "request_payload_bytes": 690,
+          "response_payload_bytes": 1310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 256.7063750466332
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 9,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 4311,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1183.1031658803113
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 13,
+          "request_payload_bytes": 536,
+          "response_payload_bytes": 5149,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1714.8148718988523
+        },
+        "workload_classic": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 60,
+          "request_payload_bytes": 4650,
+          "response_payload_bytes": 13882,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8254.96770767495
+        },
+        "workload_named": {
+          "gets": 0,
+          "updates": 120,
+          "estimated_units": 120,
+          "request_payload_bytes": 5310,
+          "response_payload_bytes": 17474,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 16487.93770663906
+        }
+      },
+      "economics": {
+        "conclusion": "higher_estimated_units",
+        "estimated_units_saved_per_action": -1.0,
+        "saving_percent": -100.0,
+        "migration_units_per_device_estimated": 13,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": null,
+        "break_even_days": null,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": -30000.0
+      }
+    },
+    {
+      "name": "lookup-overhead",
+      "status": "ok",
+      "routing": "lookup",
+      "architecture_order": [
+        "named",
+        "classic"
+      ],
+      "record_bytes": {
+        "classic_before": 345,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 162,
+        "rw-software": 169
+      },
+      "classic": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 60,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8312.314872571733,
+        "logical_actions": 60,
+        "estimated_units_per_action": 1.0,
+        "action_api_ms_p50": 132.44727096753195,
+        "action_api_ms_p95": 168.93437498947605
+      },
+      "named": {
+        "gets": 60,
+        "updates": 60,
+        "estimated_units": 120,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 19162,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 16190.54025184596,
+        "logical_actions": 60,
+        "estimated_units_per_action": 2.0,
+        "action_api_ms_p50": 266.80083395331167,
+        "action_api_ms_p95": 294.7497919667512
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 2,
+          "request_payload_bytes": 690,
+          "response_payload_bytes": 1310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 258.5275000310503
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 9,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 4310,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1333.1155420746654
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 13,
+          "request_payload_bytes": 536,
+          "response_payload_bytes": 5149,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1734.334752021823
+        },
+        "workload_named": {
+          "gets": 60,
+          "updates": 60,
+          "estimated_units": 120,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 19162,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 16190.54025184596
+        },
+        "workload_classic": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 60,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8312.314872571733
+        }
+      },
+      "economics": {
+        "conclusion": "higher_estimated_units",
+        "estimated_units_saved_per_action": -1.0,
+        "saving_percent": -100.0,
+        "migration_units_per_device_estimated": 13,
+        "overlap_extra_units_per_device_estimated": 0,
+        "break_even_logical_actions_per_device": null,
+        "break_even_days": null,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": -30000.0
+      }
+    },
+    {
+      "name": "migration-overlap",
+      "status": "ok",
+      "routing": "known",
+      "architecture_order": [
+        "classic",
+        "named"
+      ],
+      "record_bytes": {
+        "classic_before": 5945,
+        "classic_routing_stub_after": 49,
+        "rw-settings": 1362,
+        "rw-software": 4569
+      },
+      "classic": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 360,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8302,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8378.91958100954,
+        "logical_actions": 60,
+        "estimated_units_per_action": 6.0,
+        "action_api_ms_p50": 133.30518748261966,
+        "action_api_ms_p95": 168.63450000528246
+      },
+      "named": {
+        "gets": 0,
+        "updates": 60,
+        "estimated_units": 120,
+        "request_payload_bytes": 2430,
+        "response_payload_bytes": 8370,
+        "sdk_retries": 0,
+        "not_found_gets": 0,
+        "errors": 0,
+        "api_ms": 8742.468833224848,
+        "logical_actions": 60,
+        "estimated_units_per_action": 2.0,
+        "action_api_ms_p50": 133.9996040042024,
+        "action_api_ms_p95": 218.950875045266
+      },
+      "migration_trace": {
+        "pause": {
+          "stage": "in_progress",
+          "paused_after_copy": true
+        },
+        "resume": {
+          "stage": "complete",
+          "already_complete": false
+        },
+        "retry": {
+          "stage": "complete",
+          "already_complete": true
+        }
+      },
+      "phases": {
+        "setup": {
+          "gets": 0,
+          "updates": 2,
+          "estimated_units": 12,
+          "request_payload_bytes": 11890,
+          "response_payload_bytes": 12510,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 384.5801660208963
+        },
+        "verification": {
+          "gets": 9,
+          "updates": 0,
+          "estimated_units": 34,
+          "request_payload_bytes": 0,
+          "response_payload_bytes": 38317,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 1222.874709055759
+        },
+        "migration": {
+          "gets": 9,
+          "updates": 4,
+          "estimated_units": 48,
+          "request_payload_bytes": 6138,
+          "response_payload_bytes": 44757,
+          "sdk_retries": 0,
+          "not_found_gets": 2,
+          "errors": 0,
+          "api_ms": 1701.30570611218
+        },
+        "overlap": {
+          "gets": 0,
+          "updates": 200,
+          "estimated_units": 800,
+          "request_payload_bytes": 8100,
+          "response_payload_bytes": 27690,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 28442.470419802703
+        },
+        "transition_reset": {
+          "gets": 0,
+          "updates": 4,
+          "estimated_units": 14,
+          "request_payload_bytes": 2850,
+          "response_payload_bytes": 3418,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 526.3951260130852
+        },
+        "workload_classic": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 360,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8302,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8378.91958100954
+        },
+        "workload_named": {
+          "gets": 0,
+          "updates": 60,
+          "estimated_units": 120,
+          "request_payload_bytes": 2430,
+          "response_payload_bytes": 8370,
+          "sdk_retries": 0,
+          "not_found_gets": 0,
+          "errors": 0,
+          "api_ms": 8742.468833224848
+        }
+      },
+      "economics": {
+        "conclusion": "lower_estimated_units",
+        "estimated_units_saved_per_action": 4.0,
+        "saving_percent": 66.66666666666667,
+        "migration_units_per_device_estimated": 48,
+        "overlap_extra_units_per_device_estimated": 200,
+        "break_even_logical_actions_per_device": 62,
+        "break_even_days": 0.062,
+        "fleet_size": 1,
+        "steady_state_monthly_units_saved_estimated": 120000.0
+      }
+    }
+  ],
+  "resources_requested": [
+    "shadow-talk-bench-50177fa1c7b8-0-classic",
+    "shadow-talk-bench-50177fa1c7b8-0-named",
+    "shadow-talk-bench-50177fa1c7b8-1-classic",
+    "shadow-talk-bench-50177fa1c7b8-1-named",
+    "shadow-talk-bench-50177fa1c7b8-2-classic",
+    "shadow-talk-bench-50177fa1c7b8-2-named",
+    "shadow-talk-bench-50177fa1c7b8-3-classic",
+    "shadow-talk-bench-50177fa1c7b8-3-named",
+    "shadow-talk-bench-50177fa1c7b8-4-classic",
+    "shadow-talk-bench-50177fa1c7b8-4-named",
+    "shadow-talk-bench-50177fa1c7b8-5-classic",
+    "shadow-talk-bench-50177fa1c7b8-5-named",
+    "shadow-talk-bench-50177fa1c7b8-6-classic",
+    "shadow-talk-bench-50177fa1c7b8-6-named"
+  ],
+  "resources_created": [
+    "shadow-talk-bench-50177fa1c7b8-0-classic",
+    "shadow-talk-bench-50177fa1c7b8-0-named",
+    "shadow-talk-bench-50177fa1c7b8-1-classic",
+    "shadow-talk-bench-50177fa1c7b8-1-named",
+    "shadow-talk-bench-50177fa1c7b8-2-classic",
+    "shadow-talk-bench-50177fa1c7b8-2-named",
+    "shadow-talk-bench-50177fa1c7b8-3-classic",
+    "shadow-talk-bench-50177fa1c7b8-3-named",
+    "shadow-talk-bench-50177fa1c7b8-4-classic",
+    "shadow-talk-bench-50177fa1c7b8-4-named",
+    "shadow-talk-bench-50177fa1c7b8-5-classic",
+    "shadow-talk-bench-50177fa1c7b8-5-named",
+    "shadow-talk-bench-50177fa1c7b8-6-classic",
+    "shadow-talk-bench-50177fa1c7b8-6-named"
+  ],
+  "cleanup_errors": [],
+  "cloudwatch_published": true,
+  "cloudwatch_errors": []
+}
